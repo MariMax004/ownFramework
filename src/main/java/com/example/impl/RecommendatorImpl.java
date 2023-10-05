@@ -1,10 +1,10 @@
 package com.example.impl;
 
-import com.example.service.Recommendator;
 import com.example.annotation.InjectProperty;
 import com.example.annotation.Singleton;
+import com.example.service.Recommendator;
 
-@Singleton
+@Singleton(lazy = true)
 public class RecommendatorImpl implements Recommendator {
     @InjectProperty("wisky")
     private String alcohol;
@@ -15,6 +15,6 @@ public class RecommendatorImpl implements Recommendator {
 
     @Override
     public void recommend() {
-        System.out.println("to protect from covid-2019, drink "+alcohol);
+        System.out.println("to protect from covid-2019, drink " + alcohol);
     }
 }

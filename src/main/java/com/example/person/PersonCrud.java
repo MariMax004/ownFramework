@@ -1,8 +1,8 @@
 package com.example.person;
 
-import com.example.service.Announcer;
 import com.example.annotation.InjectByType;
 import com.example.model.Person;
+import com.example.service.Announcer;
 import com.example.service.PersonService;
 
 import java.util.List;

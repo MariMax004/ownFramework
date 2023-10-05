@@ -1,6 +1,4 @@
-package com.example.annotation;/**
- * @author Evgeny Borisov
- */
+package com.example.annotation;
 
 import java.lang.annotation.Retention;
 

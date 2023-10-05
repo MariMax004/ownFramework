@@ -11,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ApplicationContext {
     @Setter
     private ObjectFactory factory;
+    @Getter
     private Map<Class, Object> cache = new ConcurrentHashMap<>();
     @Getter
     private Config config;

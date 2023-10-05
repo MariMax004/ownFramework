@@ -1,5 +1,6 @@
 package com.example.impl;
 
+import com.example.annotation.Singleton;
 import com.example.model.Person;
 import com.example.service.PersonService;
 

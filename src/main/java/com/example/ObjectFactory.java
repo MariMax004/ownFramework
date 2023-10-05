@@ -10,8 +10,6 @@ import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.util.stream.Collectors.toMap;
-
 public class ObjectFactory {
     private final ApplicationContext context;
     private List<ObjectConfigurator> configurators = new ArrayList<>();

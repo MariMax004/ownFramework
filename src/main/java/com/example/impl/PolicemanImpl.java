@@ -1,5 +1,6 @@
 package com.example.impl;
 
+import com.example.annotation.Singleton;
 import com.example.service.Recommendator;
 import com.example.annotation.InjectByType;
 import com.example.service.Policeman;

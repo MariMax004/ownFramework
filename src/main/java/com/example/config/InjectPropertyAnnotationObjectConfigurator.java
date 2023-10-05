@@ -28,7 +28,7 @@ public class InjectPropertyAnnotationObjectConfigurator implements ObjectConfigu
         Class<?> implClass = t.getClass();
         for (Field field : implClass.getDeclaredFields()) {
             InjectProperty annotation = field.getAnnotation(InjectProperty.class);
-           if (annotation != null) {
+            if (annotation != null) {
                 String value = annotation.value().isEmpty() ? propertiesMap.get(field.getName()) : propertiesMap.get(annotation.value());
                 field.setAccessible(true);
                 field.set(t,value);
